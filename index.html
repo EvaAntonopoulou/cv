@@ -855,14 +855,6 @@
 <div class="toast" id="toast">Link copied!</div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Email parts split to avoid crawlers
-  function revealEmail(e) {
-    e.preventDefault();
-    var u = 'eveantonopoulou';
-    var d = 'gmail.com';
-    window.location.href = 'mai' + 'lto:' + u + '@' + d;
-  }
-
   function toggleTheme() {
     document.body.classList.toggle('light-mode');
     var isDark = !document.body.classList.contains('light-mode');
@@ -876,4 +868,17 @@
       navigator.share({ title: 'Evangelia Antonopoulou — CV', url: url });
     } else {
       navigator.clipboard.writeText(url).then(function() {
-    
+        var toast = document.getElementById('toast');
+        toast.classList.add('show');
+        setTimeout(function() { toast.classList.remove('show'); }, 2000);
+      });
+    }
+  }
+
+  window.addEventListener('beforeprint', function() {
+    alert('Tip: In the print dialog, go to "More settings" and disable "Headers and footers" for a cleaner PDF.');
+  });
+</script>
+
+</body>
+</html>
