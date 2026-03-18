@@ -1,4 +1,4 @@
-# Evangelia Antonopoulou — Personal CV Website
+# Evangelia Antonopoulou - Personal CV Website
 
 A clean, minimal, and professional CV website built with HTML, CSS, and vanilla JavaScript.
 
