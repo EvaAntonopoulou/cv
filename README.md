@@ -1,6 +1,6 @@
 # Evangelia Antonopoulou — Personal CV Website
 
-A clean, minimal, and professional CV website built with HTML, CSS, and vanilla JavaScript. Inspired by the design of [jonzi1.github.io/cv](https://jonzi1.github.io/cv).
+A clean, minimal, and professional CV website built with HTML, CSS, and vanilla JavaScript.
 
 **Live Site:** `https://evaantonopoulou.github.io/[repo-name]`
 
